@@ -31,6 +31,16 @@ I also wrote code to visualise the resulting differential equation (400 epochs) 
 And, of course, a cool animation
 <img src="img/reproduction/trajectory_animation.gif" alt="Lorenz_3d_anim" width="500">
 
+This is the differential equation produced by the 400 epochs run:
+```
+dx/dt = -8.4991*x + 8.9277*y - 0.0025*x² + 0.0021*x*y - 0.0358*x*z + 0.0227*y*z
+
+dy/dt = 1.0575 + 20.0465*x + 4.2891*y - 0.0547*z + 0.0154*x² - 0.0108*x*y - 0.7631*x*z - 0.1551*y*z
+
+dz/dt = 0.6265 + 0.0052*x - 0.0149*y - 2.6752*z + 0.0070*x² + 0.9449*x*y + 0.0414*y²
+```
+The result is very close to the actual Lorenz system with `rho = 28, sigma = 10.0, beta = 8.0 / 3.0` (parameters used to create the dataset)
+
 # Initital README
 
 ## Paper Abstract
