@@ -2,6 +2,37 @@
 
 *Mechanistic Neural Networks for Scientific Machine Learning*, Adeel Pervez, Francesco Locatello, Efstratios Gavves, *International Conference on Machine Learning (ICML) 2024*. \[[Arxiv](https://arxiv.org/abs/2402.13077)\]
 
+# Reproduction results
+
+## Lorenz
+
+I ran the code for the Lorenz system mulltiple times with different epoch numbers to see how quickly and precise the model approximates the differential equation.
+
+### Results 
+- 10 epochs
+
+<img src="img/reproduction/lorenz_10.png" alt="Lorenz_10" width="450">
+
+- 50 epochs
+
+<img src="img/reproduction/lorenz_50.png" alt="Lorenz_50" width="450">
+
+- 75 epochs
+
+<img src="img/reproduction/lorenz_75.png" alt="Lorenz_75" width="450">
+
+- 400 epochs
+
+<img src="img/reproduction/lorenz_400.png" alt="Lorenz_400" width="450">
+
+I also wrote code to visualise the resulting differential equation (400 epochs) curve in 3D (phase space)
+<img src="img/reproduction/trajectory_phase.png" alt="Lorenz_3d" width="450">
+
+And, of course, a cool animation
+<img src="img/reproduction/trajectory_animation.gif" alt="Lorenz_3d_anim" width="500">
+
+# Initital README
+
 ## Paper Abstract
 This paper presents *Mechanistic Neural Networks*, a neural network design for machine learning applications in the sciences. It incorporates a new *Mechanistic Block* in standard architectures to explicitly learn governing differential equations as representations, revealing the underlying dynamics of data and enhancing interpretability and efficiency in data modeling.
 Central to our approach is a novel *Relaxed Linear Programming Solver* (NeuRLP) inspired by a technique that reduces solving linear ODEs to solving linear programs. This integrates well with neural networks and surpasses the limitations of traditional ODE solvers enabling scalable GPU parallel processing.
