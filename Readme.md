@@ -41,6 +41,22 @@ dz/dt = 0.6265 + 0.0052*x - 0.0149*y - 2.6752*z + 0.0070*x² + 0.9449*x*y + 0.04
 ```
 The result is very close to the actual Lorenz system with `rho = 28, sigma = 10.0, beta = 8.0 / 3.0` (parameters used to create the dataset)
 
+## Three-body problem (reproduction extension)
+
+[I also extended the examples to support discovering a three-body problem differential equation approximation.](/home/study/Desktop/Work/mech-nn/visualise/visualise_three_body.py) 
+
+Trained on 400 epochs, here is a visualisation of resulted differential equation (and some plots):
+
+<img src="img/three_body/3d_trajectory.png" alt="Three-body 3D trajectory" width="450">
+
+<img src="img/three_body/trajectory_plot.png" alt="Three-body plots" width="650">
+
+And an animation showing the dynamics:
+
+<img src="img/three_body/three_body_animation.gif" alt="Three-body animation" width="500">
+
+The discovered equations for the three-body system are significantly more complex than the Lorenz system due to the increased dimensionality (9 spatial dimensions) and the complex gravitational interactions between the bodies.
+
 # Initital README
 
 ## Paper Abstract
